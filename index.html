@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>COVID-19 Simulator - SARS-CoV-2</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="header-content">
+            <h1 class="title">🦠 COVID-19 Simulator</h1>
+            <div class="subtitle">SARS-CoV-2 Pandemic Simulation</div>
+            <div class="mode-selector">
+                <button id="virusMode" class="mode-btn active">Modo Virus</button>
+                <button id="govMode" class="mode-btn">Modo Gobierno</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Container -->
+    <main class="main-container">
+        <!-- Left Panel - Interactive Map -->
+        <section class="map-section">
+            <div class="map-header">
+                <h2>Mapa Mundial Interactivo</h2>
+                <div class="map-controls">
+                    <button id="zoomIn" class="control-btn">+</button>
+                    <button id="zoomOut" class="control-btn">-</button>
+                    <button id="resetZoom" class="control-btn">⌂</button>
+                </div>
+            </div>
+            <div id="worldMap" class="map-container"></div>
+            <div class="map-legend">
+                <div class="legend-item">
+                    <div class="legend-color" style="background: #ff4444;"></div>
+                    <span>Alto riesgo (>1000 casos/100k)</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color" style="background: #ff8844;"></div>
+                    <span>Riesgo medio (100-1000 casos/100k)</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color" style="background: #44ff44;"></div>
+                    <span>Bajo riesgo (<100 casos/100k)</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Right Panel - Control Panel -->
+        <aside class="control-panel">
+            <div class="panel-section virus-panel">
+                <h3>Parámetros del Virus</h3>
+                <div class="parameter-group">
+                    <label for="infectivity">Infectividad (R₀): <span id="infectivityValue">2.5</span></label>
+                    <input type="range" id="infectivity" min="0.5" max="6.0" step="0.1" value="2.5" />
+                </div>
+                <div class="parameter-group">
+                    <label for="severity">Gravedad (%): <span id="severityValue">15</span></label>
+                    <input type="range" id="severity" min="1" max="50" step="1" value="15" />
+                </div>
+                <div class="parameter-group">
+                    <label for="mortality">Mortalidad (%): <span id="mortalityValue">2</span></label>
+                    <input type="range" id="mortality" min="0.1" max="10" step="0.1" value="2" />
+                </div>
+                <div class="parameter-group">
+                    <label for="incubation">Incubación (días): <span id="incubationValue">5</span></label>
+                    <input type="range" id="incubation" min="1" max="14" step="1" value="5" />
+                </div>
+                <div class="parameter-group">
+                    <label for="infectious">Período infeccioso (días): <span id="infectiousValue">10</span></label>
+                    <input type="range" id="infectious" min="3" max="21" step="1" value="10" />
+                </div>
+            </div>
+
+            <div class="panel-section government-panel" style="display:none;">
+                <h3>Medidas Gubernamentales</h3>
+                <button class="gov-btn" data-measure="border_closure">Cierre de fronteras</button>
+                <button class="gov-btn" data-measure="lockdown_partial">Cuarentena parcial</button>
+                <button class="gov-btn" data-measure="lockdown_full">Cuarentena total</button>
+                <button class="gov-btn" data-measure="mask_mandate">Mascarillas obligatorias</button>
+                <button class="gov-btn" data-measure="event_ban">Suspensión de eventos</button>
+                <button class="gov-btn" data-measure="curfew">Toque de queda</button>
+                <button class="gov-btn" data-measure="vaccine_program">Programa de vacunación</button>
+            </div>
+
+            <div class="panel-section">
+                <h3>Control de Simulación</h3>
+                <div class="simulation-controls">
+                    <button id="startSim" class="primary-btn">Iniciar Simulación</button>
+                    <button id="pauseSim" class="secondary-btn" disabled>Pausar</button>
+                    <button id="resetSim" class="secondary-btn">Reiniciar</button>
+                </div>
+                <div class="speed-control">
+                    <label for="simSpeed">Velocidad: <span id="speedValue">1x</span></label>
+                    <input type="range" id="simSpeed" min="0.5" max="5" step="0.5" value="1" />
+                </div>
+            </div>
+
+            <div class="panel-section">
+                <h3>Estadísticas Globales</h3>
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <div class="stat-value" id="totalCases">0</div>
+                        <div class="stat-label">Casos Totales</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value" id="activeCases">0</div>
+                        <div class="stat-label">Casos Activos</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value" id="totalDeaths">0</div>
+                        <div class="stat-label">Fallecidos</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value" id="totalRecovered">0</div>
+                        <div class="stat-label">Recuperados</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="panel-section">
+                <h3>Variante Actual</h3>
+                <div class="variant-info">
+                    <div class="variant-name" id="currentVariant">Original (Wuhan)</div>
+                    <div class="variant-date" id="variantDate">31 de diciembre de 2019</div>
+                </div>
+            </div>
+        </aside>
+    </main>
+
+    <!-- Bottom Section - Timeline and Charts -->
+    <section class="bottom-section">
+        <!-- Timeline Events -->
+        <div class="timeline-section">
+            <h3>Línea de Tiempo - Eventos Históricos</h3>
+            <div class="timeline-container">
+                <div class="timeline-date" id="currentDate">1 de Enero, 2020</div>
+                <div class="timeline-events" id="timelineEvents">
+                    <div class="event-item">Simulación iniciada...</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Charts Section -->
+        <div class="charts-section">
+            <h3>Gráficas en Tiempo Real</h3>
+            <div class="charts-container">
+                <div class="chart-panel">
+                    <h4>Casos Globales</h4>
+                    <div id="globalChart" class="chart"></div>
+                </div>
+                <div class="chart-panel">
+                    <h4>Casos por País (Top 10)</h4>
+                    <div id="countryChart" class="chart"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Country Info Modal -->
+    <div id="countryModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3 id="countryName">País</h3>
+            <div class="country-stats">
+                <div class="country-stat">
+                    <span class="stat-label">Población:</span>
+                    <span id="countryPopulation">0</span>
+                </div>
+                <div class="country-stat">
+                    <span class="stat-label">Casos Totales:</span>
+                    <span id="countryCases">0</span>
+                </div>
+                <div class="country-stat">
+                    <span class="stat-label">Casos Activos:</span>
+                    <span id="countryActive">0</span>
+                </div>
+                <div class="country-stat">
+                    <span class="stat-label">Fallecidos:</span>
+                    <span id="countryDeaths">0</span>
+                </div>
+                <div class="country-stat">
+                    <span class="stat-label">Recuperados:</span>
+                    <span id="countryRecovered">0</span>
+                </div>
+                <div class="country-stat">
+                    <span class="stat-label">Casos por 100k:</span>
+                    <span id="countryRate">0</span>
+                </div>
+            </div>
+            <div class="government-measures">
+                <h4>Medidas Gubernamentales Activas</h4>
+                <div id="activeMeasures">
+                    <div class="measure-item">Sin medidas activas</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Error Message Container -->
+    <div id="errorContainer" class="error-container" style="display: none;">
+        <div class="error-message">
+            <h3>Error de Carga</h3>
+            <p id="errorText">Ha ocurrido un error al cargar los datos del simulador.</p>
+            <button id="retryBtn" class="primary-btn">Reintentar</button>
+        </div>
+    </div>
+
+    <!-- Loading Screen -->
+    <div id="loadingScreen" class="loading-screen">
+        <div class="loading-content">
+            <div class="loading-spinner"></div>
+            <h3>Cargando Simulador COVID-19</h3>
+            <p>Preparando datos históricos y mapa mundial...</p>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="js/simulation.js"></script>
+    <script src="js/map.js"></script>
+    <script src="js/charts.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
