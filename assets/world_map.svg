@@ -1,0 +1,266 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 500" width="1000" height="500">
+  <defs>
+    <style>
+      .country-path {
+        fill: #2a2a2a;
+        stroke: #333333;
+        stroke-width: 0.5;
+        cursor: pointer;
+        transition: all 0.3s ease;
+      }
+      .country-path:hover {
+        stroke: #ff4444;
+        stroke-width: 2;
+      }
+      .ocean {
+        fill: #1a1a1a;
+      }
+    </style>
+  </defs>
+  
+  <!-- Ocean background -->
+  <rect class="ocean" width="1000" height="500"/>
+  
+  <!-- North America -->
+  <!-- United States -->
+  <path id="USA" class="country-path" d="M150 120 L300 110 L320 140 L350 130 L380 150 L350 180 L320 170 L280 190 L250 180 L200 200 L150 180 Z"/>
+  
+  <!-- Canada -->
+  <path id="CAN" class="country-path" d="M120 80 L380 70 L400 100 L380 110 L350 100 L320 110 L300 100 L280 90 L250 100 L200 90 L150 100 L120 110 Z"/>
+  
+  <!-- Mexico -->
+  <path id="MEX" class="country-path" d="M150 200 L280 190 L300 210 L280 230 L250 240 L200 230 L150 220 Z"/>
+  
+  <!-- South America -->
+  <!-- Brazil -->
+  <path id="BRA" class="country-path" d="M250 250 L350 240 L380 270 L370 320 L340 350 L300 340 L270 320 L250 300 Z"/>
+  
+  <!-- Argentina -->
+  <path id="ARG" class="country-path" d="M250 320 L300 340 L290 380 L270 400 L250 390 L240 360 Z"/>
+  
+  <!-- Chile -->
+  <path id="CHL" class="country-path" d="M230 320 L250 390 L240 400 L220 380 L225 350 Z"/>
+  
+  <!-- Peru -->
+  <path id="PER" class="country-path" d="M220 280 L270 270 L280 300 L250 320 L220 310 Z"/>
+  
+  <!-- Europe -->
+  <!-- United Kingdom -->
+  <path id="GBR" class="country-path" d="M450 120 L470 115 L475 130 L465 140 L450 135 Z"/>
+  
+  <!-- France -->
+  <path id="FRA" class="country-path" d="M470 140 L490 135 L500 155 L485 165 L470 160 Z"/>
+  
+  <!-- Germany -->
+  <path id="DEU" class="country-path" d="M490 130 L510 125 L520 145 L505 155 L490 150 Z"/>
+  
+  <!-- Spain -->
+  <path id="ESP" class="country-path" d="M450 160 L485 155 L490 175 L460 180 L450 170 Z"/>
+  
+  <!-- Italy -->
+  <path id="ITA" class="country-path" d="M500 155 L520 150 L525 180 L510 190 L500 175 Z"/>
+  
+  <!-- Poland -->
+  <path id="POL" class="country-path" d="M520 125 L540 120 L550 140 L535 150 L520 145 Z"/>
+  
+  <!-- Netherlands -->
+  <path id="NLD" class="country-path" d="M480 125 L495 120 L500 135 L485 140 L480 130 Z"/>
+  
+  <!-- Russia -->
+  <path id="RUS" class="country-path" d="M550 100 L750 90 L780 120 L770 150 L740 140 L700 130 L650 135 L600 140 L550 130 Z"/>
+  
+  <!-- Ukraine -->
+  <path id="UKR" class="country-path" d="M540 140 L580 135 L590 155 L570 165 L540 160 Z"/>
+  
+  <!-- Turkey -->
+  <path id="TUR" class="country-path" d="M520 170 L570 165 L580 185 L550 190 L520 185 Z"/>
+  
+  <!-- Africa -->
+  <!-- South Africa -->
+  <path id="ZAF" class="country-path" d="M520 350 L570 345 L580 370 L560 380 L530 375 L520 365 Z"/>
+  
+  <!-- Asia -->
+  <!-- China -->
+  <path id="CHN" class="country-path" d="M650 150 L750 140 L780 170 L770 200 L740 210 L700 200 L650 190 Z"/>
+  
+  <!-- India -->
+  <path id="IND" class="country-path" d="M600 200 L650 195 L670 230 L650 250 L620 245 L600 225 Z"/>
+  
+  <!-- Japan -->
+  <path id="JPN" class="country-path" d="M780 180 L800 175 L810 195 L800 205 L785 200 L780 190 Z"/>
+  
+  <!-- South Korea -->
+  <path id="KOR" class="country-path" d="M760 190 L775 185 L780 200 L770 205 L760 200 Z"/>
+  
+  <!-- Iran -->
+  <path id="IRN" class="country-path" d="M580 190 L620 185 L630 210 L610 220 L580 215 Z"/>
+  
+  <!-- Vietnam -->
+  <path id="VNM" class="country-path" d="M680 220 L700 215 L710 240 L700 250 L685 245 L680 235 Z"/>
+  
+  <!-- Australia -->
+  <path id="AUS" class="country-path" d="M750 320 L850 310 L870 340 L860 360 L820 365 L780 360 L750 350 Z"/>
+  
+  <!-- Additional countries for completeness -->
+  <!-- Indonesia -->
+  <path id="IDN" class="country-path" d="M700 280 L780 275 L800 295 L785 305 L750 300 L720 295 L700 290 Z"/>
+  
+  <!-- Thailand -->
+  <path id="THA" class="country-path" d="M660 240 L680 235 L690 255 L675 265 L660 260 Z"/>
+  
+  <!-- Pakistan -->
+  <path id="PAK" class="country-path" d="M580 180 L610 175 L620 195 L600 205 L580 200 Z"/>
+  
+  <!-- Bangladesh -->
+  <path id="BGD" class="country-path" d="M650 210 L670 205 L675 220 L665 225 L650 220 Z"/>
+  
+  <!-- Philippines -->
+  <path id="PHL" class="country-path" d="M720 250 L740 245 L750 265 L740 275 L725 270 L720 260 Z"/>
+  
+  <!-- Malaysia -->
+  <path id="MYS" class="country-path" d="M680 270 L710 265 L720 280 L705 285 L680 280 Z"/>
+  
+  <!-- Nigeria -->
+  <path id="NGA" class="country-path" d="M480 250 L510 245 L520 265 L505 275 L480 270 Z"/>
+  
+  <!-- Egypt -->
+  <path id="EGY" class="country-path" d="M520 220 L540 215 L550 235 L535 245 L520 240 Z"/>
+  
+  <!-- Saudi Arabia -->
+  <path id="SAU" class="country-path" d="M550 210 L580 205 L590 230 L570 240 L550 235 Z"/>
+  
+  <!-- Israel -->
+  <path id="ISR" class="country-path" d="M535 215 L545 210 L550 225 L540 230 L535 225 Z"/>
+  
+  <!-- Morocco -->
+  <path id="MAR" class="country-path" d="M440 210 L470 205 L480 225 L460 235 L440 230 Z"/>
+  
+  <!-- Algeria -->
+  <path id="DZA" class="country-path" d="M470 220 L510 215 L520 240 L490 250 L470 245 Z"/>
+  
+  <!-- Ethiopia -->
+  <path id="ETH" class="country-path" d="M540 270 L570 265 L580 285 L565 295 L540 290 Z"/>
+  
+  <!-- Kenya -->
+  <path id="KEN" class="country-path" d="M540 290 L565 285 L575 305 L560 315 L540 310 Z"/>
+  
+  <!-- Ghana -->
+  <path id="GHA" class="country-path" d="M460 270 L480 265 L485 280 L470 285 L460 280 Z"/>
+  
+  <!-- Democratic Republic of Congo -->
+  <path id="COD" class="country-path" d="M500 290 L540 285 L550 310 L520 320 L500 315 Z"/>
+  
+  <!-- Angola -->
+  <path id="AGO" class="country-path" d="M500 320 L530 315 L540 335 L520 345 L500 340 Z"/>
+  
+  <!-- Tanzania -->
+  <path id="TZA" class="country-path" d="M540 310 L565 305 L575 325 L560 335 L540 330 Z"/>
+  
+  <!-- Madagascar -->
+  <path id="MDG" class="country-path" d="M580 340 L595 335 L600 355 L590 365 L580 360 Z"/>
+  
+  <!-- Mozambique -->
+  <path id="MOZ" class="country-path" d="M560 335 L580 330 L590 355 L575 365 L560 360 Z"/>
+  
+  <!-- Zimbabwe -->
+  <path id="ZWE" class="country-path" d="M540 345 L560 340 L570 355 L555 365 L540 360 Z"/>
+  
+  <!-- Botswana -->
+  <path id="BWA" class="country-path" d="M520 355 L540 350 L550 365 L535 375 L520 370 Z"/>
+  
+  <!-- Namibia -->
+  <path id="NAM" class="country-path" d="M500 350 L520 345 L530 365 L515 375 L500 370 Z"/>
+  
+  <!-- Zambia -->
+  <path id="ZMB" class="country-path" d="M520 330 L545 325 L555 345 L540 355 L520 350 Z"/>
+  
+  <!-- Uganda -->
+  <path id="UGA" class="country-path" d="M540 300 L555 295 L565 310 L550 320 L540 315 Z"/>
+  
+  <!-- Rwanda -->
+  <path id="RWA" class="country-path" d="M535 305 L545 300 L550 310 L540 315 L535 310 Z"/>
+  
+  <!-- Burundi -->
+  <path id="BDI" class="country-path" d="M535 315 L545 310 L550 320 L540 325 L535 320 Z"/>
+  
+  <!-- Central African Republic -->
+  <path id="CAF" class="country-path" d="M510 280 L535 275 L545 295 L525 305 L510 300 Z"/>
+  
+  <!-- Chad -->
+  <path id="TCD" class="country-path" d="M510 260 L535 255 L545 275 L525 285 L510 280 Z"/>
+  
+  <!-- Sudan -->
+  <path id="SDN" class="country-path" d="M535 240 L565 235 L575 260 L550 270 L535 265 Z"/>
+  
+  <!-- South Sudan -->
+  <path id="SSD" class="country-path" d="M535 265 L560 260 L570 280 L550 290 L535 285 Z"/>
+  
+  <!-- Libya -->
+  <path id="LBY" class="country-path" d="M490 230 L525 225 L535 250 L510 260 L490 255 Z"/>
+  
+  <!-- Tunisia -->
+  <path id="TUN" class="country-path" d="M485 220 L500 215 L505 230 L495 235 L485 230 Z"/>
+  
+  <!-- Mali -->
+  <path id="MLI" class="country-path" d="M450 250 L485 245 L495 270 L470 280 L450 275 Z"/>
+  
+  <!-- Niger -->
+  <path id="NER" class="country-path" d="M480 250 L515 245 L525 270 L500 280 L480 275 Z"/>
+  
+  <!-- Burkina Faso -->
+  <path id="BFA" class="country-path" d="M460 265 L485 260 L495 280 L475 290 L460 285 Z"/>
+  
+  <!-- Ivory Coast -->
+  <path id="CIV" class="country-path" d="M440 280 L470 275 L480 295 L460 305 L440 300 Z"/>
+  
+  <!-- Guinea -->
+  <path id="GIN" class="country-path" d="M420 285 L445 280 L455 300 L435 310 L420 305 Z"/>
+  
+  <!-- Sierra Leone -->
+  <path id="SLE" class="country-path" d="M415 295 L430 290 L435 305 L425 310 L415 305 Z"/>
+  
+  <!-- Liberia -->
+  <path id="LBR" class="country-path" d="M420 305 L440 300 L445 315 L430 320 L420 315 Z"/>
+  
+  <!-- Senegal -->
+  <path id="SEN" class="country-path" d="M400 275 L425 270 L435 290 L415 300 L400 295 Z"/>
+  
+  <!-- Mauritania -->
+  <path id="MRT" class="country-path" d="M420 250 L450 245 L460 270 L435 280 L420 275 Z"/>
+  
+  <!-- Gambia -->
+  <path id="GMB" class="country-path" d="M410 280 L425 275 L430 285 L420 290 L410 285 Z"/>
+  
+  <!-- Guinea-Bissau -->
+  <path id="GNB" class="country-path" d="M405 285 L420 280 L425 295 L415 300 L405 295 Z"/>
+  
+  <!-- Cape Verde -->
+  <path id="CPV" class="country-path" d="M380 270 L390 265 L395 275 L385 280 L380 275 Z"/>
+  
+  <!-- Benin -->
+  <path id="BEN" class="country-path" d="M475 275 L490 270 L495 290 L485 295 L475 290 Z"/>
+  
+  <!-- Togo -->
+  <path id="TGO" class="country-path" d="M470 280 L480 275 L485 290 L475 295 L470 290 Z"/>
+  
+  <!-- Cameroon -->
+  <path id="CMR" class="country-path" d="M490 280 L515 275 L525 300 L505 310 L490 305 Z"/>
+  
+  <!-- Equatorial Guinea -->
+  <path id="GNQ" class="country-path" d="M485 295 L495 290 L500 300 L490 305 L485 300 Z"/>
+  
+  <!-- Gabon -->
+  <path id="GAB" class="country-path" d="M490 305 L510 300 L520 320 L505 330 L490 325 Z"/>
+  
+  <!-- Republic of the Congo -->
+  <path id="COG" class="country-path" d="M505 310 L525 305 L535 325 L520 335 L505 330 Z"/>
+  
+  <!-- Somalia -->
+  <path id="SOM" class="country-path" d="M575 285 L595 280 L605 305 L590 315 L575 310 Z"/>
+  
+  <!-- Djibouti -->
+  <path id="DJI" class="country-path" d="L570 280 L580 275 L585 285 L575 290 L570 285 Z"/>
+  
+  <!-- Eritrea -->
+  <path id="ERI" class="country-path" d="M555 270 L575 265 L580 280 L565 285 L555 280 Z"/>
+</svg>
