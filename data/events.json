@@ -1,0 +1,352 @@
+{
+  "events": [
+    {
+      "date": "2019-12-31",
+      "description": "Primeros casos reportados en Wuhan, China",
+      "type": "outbreak",
+      "impact": "low"
+    },
+    {
+      "date": "2020-01-11",
+      "description": "Primera muerte confirmada por COVID-19 en China",
+      "type": "milestone",
+      "impact": "medium"
+    },
+    {
+      "date": "2020-01-21",
+      "description": "Primer caso confirmado en Estados Unidos",
+      "type": "spread",
+      "impact": "medium"
+    },
+    {
+      "date": "2020-01-23",
+      "description": "Wuhan entra en cuarentena total - 11 millones de personas",
+      "type": "lockdown",
+      "impact": "high"
+    },
+    {
+      "date": "2020-01-30",
+      "description": "OMS declara emergencia de salud pública internacional",
+      "type": "declaration",
+      "impact": "high"
+    },
+    {
+      "date": "2020-02-11",
+      "description": "OMS nombra oficialmente la enfermedad como COVID-19",
+      "type": "milestone",
+      "impact": "medium"
+    },
+    {
+      "date": "2020-02-29",
+      "description": "Primera muerte por COVID-19 en Estados Unidos",
+      "type": "milestone",
+      "impact": "medium"
+    },
+    {
+      "date": "2020-03-11",
+      "description": "OMS declara oficialmente la pandemia global",
+      "type": "declaration",
+      "impact": "critical"
+    },
+    {
+      "date": "2020-03-13",
+      "description": "Estados Unidos declara emergencia nacional",
+      "type": "declaration",
+      "impact": "high"
+    },
+    {
+      "date": "2020-03-14",
+      "description": "España declara estado de alarma nacional",
+      "type": "lockdown",
+      "impact": "high"
+    },
+    {
+      "date": "2020-03-17",
+      "description": "Francia entra en confinamiento nacional",
+      "type": "lockdown",
+      "impact": "high"
+    },
+    {
+      "date": "2020-03-19",
+      "description": "Italia supera a China en número de muertes",
+      "type": "milestone",
+      "impact": "high"
+    },
+    {
+      "date": "2020-03-21",
+      "description": "Reino Unido cierra pubs, restaurantes y gimnasios",
+      "type": "measures",
+      "impact": "medium"
+    },
+    {
+      "date": "2020-03-24",
+      "description": "Juegos Olímpicos de Tokio 2020 oficialmente pospuestos",
+      "type": "event",
+      "impact": "medium"
+    },
+    {
+      "date": "2020-03-26",
+      "description": "Estados Unidos se convierte en el país con más casos",
+      "type": "milestone",
+      "impact": "high"
+    },
+    {
+      "date": "2020-04-02",
+      "description": "Más de 1 millón de casos confirmados globalmente",
+      "type": "milestone",
+      "impact": "high"
+    },
+    {
+      "date": "2020-04-07",
+      "description": "Reino Unido entra en confinamiento total",
+      "type": "lockdown",
+      "impact": "high"
+    },
+    {
+      "date": "2020-04-16",
+      "description": "Más de 100,000 muertes globales confirmadas",
+      "type": "milestone",
+      "impact": "critical"
+    },
+    {
+      "date": "2020-05-11",
+      "description": "España comienza desescalada por fases",
+      "type": "reopening",
+      "impact": "medium"
+    },
+    {
+      "date": "2020-05-28",
+      "description": "Más de 100,000 muertes en Estados Unidos",
+      "type": "milestone",
+      "impact": "critical"
+    },
+    {
+      "date": "2020-06-15",
+      "description": "Europa reabre fronteras internas gradualmente",
+      "type": "reopening",
+      "impact": "medium"
+    },
+    {
+      "date": "2020-07-01",
+      "description": "Más de 10 millones de casos confirmados globalmente",
+      "type": "milestone",
+      "impact": "high"
+    },
+    {
+      "date": "2020-07-07",
+      "description": "Brasil supera 1.6 millones de casos",
+      "type": "milestone",
+      "impact": "high"
+    },
+    {
+      "date": "2020-08-11",
+      "description": "Rusia anuncia primera vacuna registrada (Sputnik V)",
+      "type": "vaccine",
+      "impact": "high"
+    },
+    {
+      "date": "2020-09-28",
+      "description": "Más de 1 millón de muertes globales confirmadas",
+      "type": "milestone",
+      "impact": "critical"
+    },
+    {
+      "date": "2020-10-02",
+      "description": "Donald Trump da positivo por COVID-19",
+      "type": "milestone",
+      "impact": "medium"
+    },
+    {
+      "date": "2020-11-09",
+      "description": "Pfizer anuncia vacuna con 90% de eficacia",
+      "type": "vaccine",
+      "impact": "critical"
+    },
+    {
+      "date": "2020-11-16",
+      "description": "Moderna anuncia vacuna con 94.5% de eficacia",
+      "type": "vaccine",
+      "impact": "critical"
+    },
+    {
+      "date": "2020-12-02",
+      "description": "Reino Unido aprueba vacuna Pfizer-BioNTech",
+      "type": "vaccine",
+      "impact": "critical"
+    },
+    {
+      "date": "2020-12-08",
+      "description": "Primera persona vacunada en Reino Unido",
+      "type": "vaccine",
+      "impact": "critical"
+    },
+    {
+      "date": "2020-12-11",
+      "description": "FDA aprueba vacuna Pfizer en Estados Unidos",
+      "type": "vaccine",
+      "impact": "critical"
+    },
+    {
+      "date": "2020-12-14",
+      "description": "Comienza vacunación masiva en Estados Unidos",
+      "type": "vaccine",
+      "impact": "critical"
+    },
+    {
+      "date": "2020-12-20",
+      "description": "Identificada variante Alpha (B.1.1.7) en Reino Unido",
+      "type": "variant",
+      "impact": "high"
+    },
+    {
+      "date": "2020-12-27",
+      "description": "Comienza vacunación en la Unión Europea",
+      "type": "vaccine",
+      "impact": "critical"
+    },
+    {
+      "date": "2021-01-06",
+      "description": "Más de 2 millones de muertes globales",
+      "type": "milestone",
+      "impact": "critical"
+    },
+    {
+      "date": "2021-01-25",
+      "description": "Más de 100 millones de casos globales",
+      "type": "milestone",
+      "impact": "critical"
+    },
+    {
+      "date": "2021-02-17",
+      "description": "Identificada variante Beta (B.1.351) en Sudáfrica",
+      "type": "variant",
+      "impact": "high"
+    },
+    {
+      "date": "2021-03-11",
+      "description": "Un año desde que OMS declaró la pandemia",
+      "type": "milestone",
+      "impact": "medium"
+    },
+    {
+      "date": "2021-04-15",
+      "description": "Identificada variante Delta (B.1.617.2) en India",
+      "type": "variant",
+      "impact": "critical"
+    },
+    {
+      "date": "2021-04-29",
+      "description": "Más de 3 millones de muertes globales",
+      "type": "milestone",
+      "impact": "critical"
+    },
+    {
+      "date": "2021-05-05",
+      "description": "India supera 400,000 casos diarios",
+      "type": "milestone",
+      "impact": "critical"
+    },
+    {
+      "date": "2021-07-23",
+      "description": "Juegos Olímpicos de Tokio comienzan sin espectadores",
+      "type": "event",
+      "impact": "medium"
+    },
+    {
+      "date": "2021-08-05",
+      "description": "Más de 200 millones de casos globales",
+      "type": "milestone",
+      "impact": "high"
+    },
+    {
+      "date": "2021-08-23",
+      "description": "FDA aprueba completamente vacuna Pfizer",
+      "type": "vaccine",
+      "impact": "high"
+    },
+    {
+      "date": "2021-11-24",
+      "description": "Identificada variante Ómicron (B.1.1.529) en Sudáfrica",
+      "type": "variant",
+      "impact": "critical"
+    },
+    {
+      "date": "2021-11-26",
+      "description": "OMS clasifica Ómicron como variante de preocupación",
+      "type": "variant",
+      "impact": "critical"
+    },
+    {
+      "date": "2021-12-15",
+      "description": "Países Bajos entra en confinamiento por Ómicron",
+      "type": "lockdown",
+      "impact": "high"
+    },
+    {
+      "date": "2022-01-10",
+      "description": "Más de 300 millones de casos globales",
+      "type": "milestone",
+      "impact": "high"
+    },
+    {
+      "date": "2022-02-24",
+      "description": "Guerra en Ucrania complica respuesta sanitaria",
+      "type": "event",
+      "impact": "medium"
+    },
+    {
+      "date": "2022-03-02",
+      "description": "Más de 6 millones de muertes globales",
+      "type": "milestone",
+      "impact": "critical"
+    },
+    {
+      "date": "2022-04-18",
+      "description": "China levanta confinamiento de Shanghai",
+      "type": "reopening",
+      "impact": "medium"
+    },
+    {
+      "date": "2022-05-05",
+      "description": "Más de 1 millón de muertes en Estados Unidos",
+      "type": "milestone",
+      "impact": "critical"
+    },
+    {
+      "date": "2022-07-12",
+      "description": "Subvariante BA.5 de Ómicron domina globalmente",
+      "type": "variant",
+      "impact": "medium"
+    },
+    {
+      "date": "2022-09-14",
+      "description": "Biden declara que 'la pandemia ha terminado'",
+      "type": "declaration",
+      "impact": "medium"
+    },
+    {
+      "date": "2022-10-14",
+      "description": "China mantiene política COVID-19 cero",
+      "type": "measures",
+      "impact": "medium"
+    },
+    {
+      "date": "2022-11-01",
+      "description": "Más de 500 millones de casos globales",
+      "type": "milestone",
+      "impact": "high"
+    },
+    {
+      "date": "2022-12-07",
+      "description": "China abandona política COVID-19 cero",
+      "type": "reopening",
+      "impact": "high"
+    },
+    {
+      "date": "2022-12-30",
+      "description": "Fin del segundo año completo de pandemia",
+      "type": "milestone",
+      "impact": "medium"
+    }
+  ]
+}
