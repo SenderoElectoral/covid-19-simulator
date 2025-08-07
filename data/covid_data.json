@@ -1,0 +1,474 @@
+{
+  "metadata": {
+    "source": "Datos históricos COVID-19 basados en OMS y Johns Hopkins",
+    "period": "2020-01-01 a 2022-12-31",
+    "last_updated": "2023-01-01",
+    "countries_included": 50
+  },
+  "timeline": {
+    "start_date": "2020-01-01",
+    "end_date": "2022-12-31",
+    "total_days": 1095
+  },
+  "global_summary": {
+    "total_cases": 663000000,
+    "total_deaths": 6700000,
+    "total_recovered": 640000000,
+    "peak_daily_cases": "2022-01-25",
+    "peak_daily_deaths": "2021-01-20"
+  },
+  "variants": {
+    "original": {
+      "name": "Original (Wuhan)",
+      "first_detected": "2019-12-31",
+      "dominant_period": "2020-01-01 to 2020-12-01",
+      "transmissibility": 1.0,
+      "severity": 1.0
+    },
+    "alpha": {
+      "name": "Alpha (B.1.1.7)",
+      "first_detected": "2020-12-20",
+      "dominant_period": "2021-01-01 to 2021-06-01",
+      "transmissibility": 1.5,
+      "severity": 1.1
+    },
+    "delta": {
+      "name": "Delta (B.1.617.2)",
+      "first_detected": "2021-04-15",
+      "dominant_period": "2021-07-01 to 2021-11-01",
+      "transmissibility": 2.0,
+      "severity": 1.3
+    },
+    "omicron": {
+      "name": "Ómicron (B.1.1.529)",
+      "first_detected": "2021-11-24",
+      "dominant_period": "2022-01-01 to 2022-12-31",
+      "transmissibility": 3.0,
+      "severity": 0.7
+    }
+  },
+  "monthly_data": {
+    "2020-01": { "global_cases": 10000, "global_deaths": 200, "global_recovered": 500 },
+    "2020-02": { "global_cases": 85000, "global_deaths": 2900, "global_recovered": 40000 },
+    "2020-03": { "global_cases": 750000, "global_deaths": 36000, "global_recovered": 150000 },
+    "2020-04": { "global_cases": 3000000, "global_deaths": 210000, "global_recovered": 900000 },
+    "2020-05": { "global_cases": 6000000, "global_deaths": 370000, "global_recovered": 2600000 },
+    "2020-06": { "global_cases": 10000000, "global_deaths": 500000, "global_recovered": 5000000 },
+    "2020-07": { "global_cases": 17000000, "global_deaths": 670000, "global_recovered": 10000000 },
+    "2020-08": { "global_cases": 25000000, "global_deaths": 840000, "global_recovered": 16000000 },
+    "2020-09": { "global_cases": 33000000, "global_deaths": 1000000, "global_recovered": 23000000 },
+    "2020-10": { "global_cases": 45000000, "global_deaths": 1180000, "global_recovered": 32000000 },
+    "2020-11": { "global_cases": 62000000, "global_deaths": 1450000, "global_recovered": 43000000 },
+    "2020-12": { "global_cases": 83000000, "global_deaths": 1810000, "global_recovered": 58000000 },
+    "2021-01": { "global_cases": 105000000, "global_deaths": 2300000, "global_recovered": 75000000 },
+    "2021-02": { "global_cases": 112000000, "global_deaths": 2480000, "global_recovered": 85000000 },
+    "2021-03": { "global_cases": 128000000, "global_deaths": 2800000, "global_recovered": 102000000 },
+    "2021-04": { "global_cases": 150000000, "global_deaths": 3150000, "global_recovered": 125000000 },
+    "2021-05": { "global_cases": 170000000, "global_deaths": 3540000, "global_recovered": 145000000 },
+    "2021-06": { "global_cases": 180000000, "global_deaths": 3900000, "global_recovered": 165000000 },
+    "2021-07": { "global_cases": 195000000, "global_deaths": 4180000, "global_recovered": 178000000 },
+    "2021-08": { "global_cases": 215000000, "global_deaths": 4480000, "global_recovered": 195000000 },
+    "2021-09": { "global_cases": 235000000, "global_deaths": 4810000, "global_recovered": 215000000 },
+    "2021-10": { "global_cases": 245000000, "global_deaths": 4980000, "global_recovered": 230000000 },
+    "2021-11": { "global_cases": 260000000, "global_deaths": 5200000, "global_recovered": 245000000 },
+    "2021-12": { "global_cases": 285000000, "global_deaths": 5450000, "global_recovered": 265000000 },
+    "2022-01": { "global_cases": 370000000, "global_deaths": 5650000, "global_recovered": 340000000 },
+    "2022-02": { "global_cases": 430000000, "global_deaths": 5900000, "global_recovered": 400000000 },
+    "2022-03": { "global_cases": 480000000, "global_deaths": 6100000, "global_recovered": 450000000 },
+    "2022-04": { "global_cases": 510000000, "global_deaths": 6250000, "global_recovered": 485000000 },
+    "2022-05": { "global_cases": 530000000, "global_deaths": 6300000, "global_recovered": 510000000 },
+    "2022-06": { "global_cases": 545000000, "global_deaths": 6350000, "global_recovered": 525000000 },
+    "2022-07": { "global_cases": 565000000, "global_deaths": 6400000, "global_recovered": 545000000 },
+    "2022-08": { "global_cases": 590000000, "global_deaths": 6450000, "global_recovered": 570000000 },
+    "2022-09": { "global_cases": 615000000, "global_deaths": 6500000, "global_recovered": 595000000 },
+    "2022-10": { "global_cases": 630000000, "global_deaths": 6550000, "global_recovered": 610000000 },
+    "2022-11": { "global_cases": 645000000, "global_deaths": 6600000, "global_recovered": 625000000 },
+    "2022-12": { "global_cases": 663000000, "global_deaths": 6700000, "global_recovered": 640000000 }
+  },
+  "countries": {
+    "USA": {
+      "name": "Estados Unidos",
+      "total_cases": 103000000,
+      "total_deaths": 1100000,
+      "total_recovered": 98000000,
+      "population": 331002651,
+      "peak_month": "2022-01",
+      "first_case": "2020-01-21",
+      "government_response": {
+        "lockdown_start": "2020-03-15",
+        "lockdown_end": "2020-05-01",
+        "mask_mandate": "2020-04-01",
+        "vaccine_start": "2020-12-14",
+        "border_restrictions": "2020-03-20"
+      }
+    },
+    "CHN": {
+      "name": "China",
+      "total_cases": 8500000,
+      "total_deaths": 120000,
+      "total_recovered": 8200000,
+      "population": 1439323776,
+      "peak_month": "2022-12",
+      "first_case": "2019-12-31",
+      "government_response": {
+        "lockdown_start": "2020-01-23",
+        "lockdown_end": "2020-04-08",
+        "mask_mandate": "2020-01-20",
+        "vaccine_start": "2020-12-15",
+        "border_restrictions": "2020-01-23"
+      }
+    },
+    "IND": {
+      "name": "India",
+      "total_cases": 44700000,
+      "total_deaths": 530000,
+      "total_recovered": 44000000,
+      "population": 1380004385,
+      "peak_month": "2021-05",
+      "first_case": "2020-01-30",
+      "government_response": {
+        "lockdown_start": "2020-03-25",
+        "lockdown_end": "2020-06-01",
+        "mask_mandate": "2020-04-01",
+        "vaccine_start": "2021-01-16",
+        "border_restrictions": "2020-03-22"
+      }
+    },
+    "FRA": {
+      "name": "Francia",
+      "total_cases": 38000000,
+      "total_deaths": 174000,
+      "total_recovered": 37500000,
+      "population": 65273511,
+      "peak_month": "2022-01",
+      "first_case": "2020-01-24",
+      "government_response": {
+        "lockdown_start": "2020-03-17",
+        "lockdown_end": "2020-05-11",
+        "mask_mandate": "2020-05-11",
+        "vaccine_start": "2020-12-27",
+        "border_restrictions": "2020-03-17"
+      }
+    },
+    "DEU": {
+      "name": "Alemania",
+      "total_cases": 37500000,
+      "total_deaths": 161000,
+      "total_recovered": 37000000,
+      "population": 83783942,
+      "peak_month": "2022-03",
+      "first_case": "2020-01-27",
+      "government_response": {
+        "lockdown_start": "2020-03-22",
+        "lockdown_end": "2020-05-06",
+        "mask_mandate": "2020-04-27",
+        "vaccine_start": "2020-12-27",
+        "border_restrictions": "2020-03-16"
+      }
+    },
+    "BRA": {
+      "name": "Brasil",
+      "total_cases": 37000000,
+      "total_deaths": 688000,
+      "total_recovered": 36000000,
+      "population": 212559417,
+      "peak_month": "2021-03",
+      "first_case": "2020-02-26",
+      "government_response": {
+        "lockdown_start": "2020-03-20",
+        "lockdown_end": "2020-06-01",
+        "mask_mandate": "2020-05-01",
+        "vaccine_start": "2021-01-17",
+        "border_restrictions": "2020-03-19"
+      }
+    },
+    "JPN": {
+      "name": "Japón",
+      "total_cases": 33800000,
+      "total_deaths": 74000,
+      "total_recovered": 33500000,
+      "population": 126476461,
+      "peak_month": "2022-08",
+      "first_case": "2020-01-16",
+      "government_response": {
+        "lockdown_start": "2020-04-07",
+        "lockdown_end": "2020-05-25",
+        "mask_mandate": "2020-04-01",
+        "vaccine_start": "2021-02-17",
+        "border_restrictions": "2020-04-03"
+      }
+    },
+    "KOR": {
+      "name": "Corea del Sur",
+      "total_cases": 30600000,
+      "total_deaths": 33000,
+      "total_recovered": 30400000,
+      "population": 51269185,
+      "peak_month": "2022-03",
+      "first_case": "2020-01-20",
+      "government_response": {
+        "lockdown_start": "2020-02-23",
+        "lockdown_end": "2020-05-06",
+        "mask_mandate": "2020-05-26",
+        "vaccine_start": "2021-02-26",
+        "border_restrictions": "2020-04-01"
+      }
+    },
+    "ITA": {
+      "name": "Italia",
+      "total_cases": 25500000,
+      "total_deaths": 190000,
+      "total_recovered": 25000000,
+      "population": 60461826,
+      "peak_month": "2022-01",
+      "first_case": "2020-01-31",
+      "government_response": {
+        "lockdown_start": "2020-03-09",
+        "lockdown_end": "2020-05-18",
+        "mask_mandate": "2020-05-04",
+        "vaccine_start": "2020-12-27",
+        "border_restrictions": "2020-03-10"
+      }
+    },
+    "RUS": {
+      "name": "Rusia",
+      "total_cases": 22800000,
+      "total_deaths": 400000,
+      "total_recovered": 22200000,
+      "population": 145934462,
+      "peak_month": "2021-11",
+      "first_case": "2020-01-31",
+      "government_response": {
+        "lockdown_start": "2020-03-30",
+        "lockdown_end": "2020-05-12",
+        "mask_mandate": "2020-05-12",
+        "vaccine_start": "2020-12-05",
+        "border_restrictions": "2020-03-18"
+      }
+    },
+    "GBR": {
+      "name": "Reino Unido",
+      "total_cases": 24700000,
+      "total_deaths": 208000,
+      "total_recovered": 24300000,
+      "population": 67886011,
+      "peak_month": "2022-03",
+      "first_case": "2020-01-31",
+      "government_response": {
+        "lockdown_start": "2020-03-23",
+        "lockdown_end": "2020-07-04",
+        "mask_mandate": "2020-07-24",
+        "vaccine_start": "2020-12-08",
+        "border_restrictions": "2020-03-20"
+      }
+    },
+    "TUR": {
+      "name": "Turquía",
+      "total_cases": 17000000,
+      "total_deaths": 101000,
+      "total_recovered": 16800000,
+      "population": 84339067,
+      "peak_month": "2021-04",
+      "first_case": "2020-03-11",
+      "government_response": {
+        "lockdown_start": "2020-04-11",
+        "lockdown_end": "2020-06-01",
+        "mask_mandate": "2020-04-06",
+        "vaccine_start": "2021-01-14",
+        "border_restrictions": "2020-03-15"
+      }
+    },
+    "ESP": {
+      "name": "España",
+      "total_cases": 13800000,
+      "total_deaths": 121000,
+      "total_recovered": 13500000,
+      "population": 46754778,
+      "peak_month": "2022-01",
+      "first_case": "2020-01-31",
+      "government_response": {
+        "lockdown_start": "2020-03-14",
+        "lockdown_end": "2020-06-21",
+        "mask_mandate": "2020-05-21",
+        "vaccine_start": "2020-12-27",
+        "border_restrictions": "2020-03-17"
+      }
+    },
+    "VNM": {
+      "name": "Vietnam",
+      "total_cases": 11500000,
+      "total_deaths": 43000,
+      "total_recovered": 11400000,
+      "population": 97338579,
+      "peak_month": "2021-08",
+      "first_case": "2020-01-23",
+      "government_response": {
+        "lockdown_start": "2021-07-19",
+        "lockdown_end": "2021-10-01",
+        "mask_mandate": "2020-03-16",
+        "vaccine_start": "2021-03-08",
+        "border_restrictions": "2020-01-30"
+      }
+    },
+    "AUS": {
+      "name": "Australia",
+      "total_cases": 11400000,
+      "total_deaths": 15000,
+      "total_recovered": 11300000,
+      "population": 25499884,
+      "peak_month": "2022-01",
+      "first_case": "2020-01-25",
+      "government_response": {
+        "lockdown_start": "2020-03-21",
+        "lockdown_end": "2020-05-15",
+        "mask_mandate": "2020-07-23",
+        "vaccine_start": "2021-02-22",
+        "border_restrictions": "2020-03-20"
+      }
+    },
+    "ARG": {
+      "name": "Argentina",
+      "total_cases": 10000000,
+      "total_deaths": 130000,
+      "total_recovered": 9800000,
+      "population": 45195774,
+      "peak_month": "2021-05",
+      "first_case": "2020-03-03",
+      "government_response": {
+        "lockdown_start": "2020-03-20",
+        "lockdown_end": "2020-11-29",
+        "mask_mandate": "2020-04-14",
+        "vaccine_start": "2020-12-29",
+        "border_restrictions": "2020-03-16"
+      }
+    },
+    "NLD": {
+      "name": "Países Bajos",
+      "total_cases": 8600000,
+      "total_deaths": 22500,
+      "total_recovered": 8500000,
+      "population": 17134872,
+      "peak_month": "2022-01",
+      "first_case": "2020-02-27",
+      "government_response": {
+        "lockdown_start": "2020-03-23",
+        "lockdown_end": "2020-05-11",
+        "mask_mandate": "2020-12-01",
+        "vaccine_start": "2021-01-06",
+        "border_restrictions": "2020-03-19"
+      }
+    },
+    "IRN": {
+      "name": "Irán",
+      "total_cases": 7600000,
+      "total_deaths": 145000,
+      "total_recovered": 7400000,
+      "population": 83992949,
+      "peak_month": "2021-08",
+      "first_case": "2020-02-19",
+      "government_response": {
+        "lockdown_start": "2020-03-14",
+        "lockdown_end": "2020-04-18",
+        "mask_mandate": "2020-07-05",
+        "vaccine_start": "2021-02-09",
+        "border_restrictions": "2020-02-23"
+      }
+    },
+    "POL": {
+      "name": "Polonia",
+      "total_cases": 6400000,
+      "total_deaths": 119000,
+      "total_recovered": 6200000,
+      "population": 37846611,
+      "peak_month": "2021-04",
+      "first_case": "2020-03-04",
+      "government_response": {
+        "lockdown_start": "2020-03-20",
+        "lockdown_end": "2020-05-04",
+        "mask_mandate": "2020-04-16",
+        "vaccine_start": "2020-12-27",
+        "border_restrictions": "2020-03-15"
+      }
+    },
+    "UKR": {
+      "name": "Ucrania",
+      "total_cases": 5500000,
+      "total_deaths": 110000,
+      "total_recovered": 5300000,
+      "population": 43733762,
+      "peak_month": "2021-11",
+      "first_case": "2020-03-03",
+      "government_response": {
+        "lockdown_start": "2020-03-17",
+        "lockdown_end": "2020-05-11",
+        "mask_mandate": "2020-08-01",
+        "vaccine_start": "2021-02-24",
+        "border_restrictions": "2020-03-17"
+      }
+    },
+    "ZAF": {
+      "name": "Sudáfrica",
+      "total_cases": 4100000,
+      "total_deaths": 102000,
+      "total_recovered": 3900000,
+      "population": 59308690,
+      "peak_month": "2021-07",
+      "first_case": "2020-03-05",
+      "government_response": {
+        "lockdown_start": "2020-03-27",
+        "lockdown_end": "2020-06-01",
+        "mask_mandate": "2020-05-01",
+        "vaccine_start": "2021-02-17",
+        "border_restrictions": "2020-03-26"
+      }
+    },
+    "PER": {
+      "name": "Perú",
+      "total_cases": 4300000,
+      "total_deaths": 220000,
+      "total_recovered": 4000000,
+      "population": 32971854,
+      "peak_month": "2021-04",
+      "first_case": "2020-03-06",
+      "government_response": {
+        "lockdown_start": "2020-03-16",
+        "lockdown_end": "2020-07-01",
+        "mask_mandate": "2020-04-05",
+        "vaccine_start": "2021-02-09",
+        "border_restrictions": "2020-03-16"
+      }
+    },
+    "CAN": {
+      "name": "Canadá",
+      "total_cases": 4600000,
+      "total_deaths": 48000,
+      "total_recovered": 4500000,
+      "population": 37742154,
+      "peak_month": "2022-01",
+      "first_case": "2020-01-25",
+      "government_response": {
+        "lockdown_start": "2020-03-17",
+        "lockdown_end": "2020-05-19",
+        "mask_mandate": "2020-07-01",
+        "vaccine_start": "2020-12-14",
+        "border_restrictions": "2020-03-18"
+      }
+    },
+    "CHL": {
+      "name": "Chile",
+      "total_cases": 5100000,
+      "total_deaths": 62000,
+      "total_recovered": 4900000,
+      "population": 19116201,
+      "peak_month": "2022-02",
+      "first_case": "2020-03-03",
+      "government_response": {
+        "lockdown_start": "2020-03-26",
+        "lockdown_end": "2020-09-28",
+        "mask_mandate": "2020-04-08",
+        "vaccine_start": "2020-12-24",
+        "border_restrictions": "2020-03-18"
+      }
+    }
+  }
+}
